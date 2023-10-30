@@ -19,6 +19,12 @@ const typeDefs = gql`
     length: Int
     "The number of modules this track contains"
     modulesCount: Int
+    #The number of views each track has got#
+    numberOfViews: Int
+    #Each tracks' complete description#
+    description:String
+    #Various modules of each track#
+    modules: [Module!]!
   }
 
   "Author of a complete Track or a Module"
@@ -28,6 +34,12 @@ const typeDefs = gql`
     name: String!
     "Author's profile picture"
     photo: String
+  }
+  
+  type Module {
+    id: ID!
+    moduleTitle: String
+    moduleLength: Int
   }
 `;
 
