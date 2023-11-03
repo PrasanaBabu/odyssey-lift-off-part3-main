@@ -40,8 +40,8 @@ const typeDefs = gql`
   
   type Module {
     id: ID!
-    moduleTitle: String
-    moduleLength: Int
+    title: String
+    length: Int
   }
 `;
 
